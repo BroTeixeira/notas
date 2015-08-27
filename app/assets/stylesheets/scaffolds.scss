@@ -1,10 +1,14 @@
 body {
-  background-color: #fff;
-  color: #333;
+  background: url('/assets/background.png') no-repeat center center fixed;  color: #333;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
 }
+
 
 p, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
