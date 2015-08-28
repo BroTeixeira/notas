@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html>
 	<head>
-	  <title>Notas</title>
+	  <title>Hero's Notes</title>
 	  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
 	  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 	  <%= csrf_meta_tags %>
 	</head>
 	<body>
+
+    <%= render 'shared/navigation' %>
+    <%= render partial: "shared/flash_messages", flash: flash %>
+
 	<%= yield %>
+
+    <%= render "shared/footer" %>
 
 	</body>
 </html>
+ 

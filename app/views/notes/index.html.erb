@@ -1,13 +1,13 @@
 <div class="container">
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Notes</h1>
+<h1>Minhas anotações</h1>
 
 <table class="bordered centered responsive-table">
   <thead>
     <tr>
-      <th>Title</th>
-      <th>Notes</th>
+      <th>Título</th>
+      <th>Nota</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -17,10 +17,9 @@
     <% @notes.each do |note| %>
       <tr>
         <td><%= note.title %></td>
-        <td><%= note.notes %></td>
-        <td><%= link_to 'Show', note %></td>
-        <td><%= link_to 'Edit', edit_note_path(note) %></td>
-        <td><%= link_to 'Destroy', note, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Exibir', note %></td>
+        <td><%= link_to 'Editar', edit_note_path(note) %></td>
+        <td><%= link_to 'Excluir', note, method: :delete, data: { confirm: 'Tem certeza?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -28,4 +27,4 @@
 
 <br>
 
-<%= link_to 'New Note', new_note_path %>
+<%= link_to 'Nova nota', new_note_path %>
